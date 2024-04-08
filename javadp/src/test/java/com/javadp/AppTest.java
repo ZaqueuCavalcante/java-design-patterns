@@ -27,4 +27,19 @@ public class AppTest
 
         assertFalse(roundHole.fits(largeSqPegAdapter));
     }
+
+    @Test
+    public void builderTests()
+    {
+        Builder heroBuilder = new Builder("Photographer", "Peter Parker")
+            .withHairColor("Black")
+            .withWeapon("Web shooters");
+        
+        Hero spider = heroBuilder.build();
+
+        assertEquals("Photographer", spider.profession);
+        assertEquals("Peter Parker", spider.name);
+        assertEquals("Black", spider.hairColor);
+        assertEquals("Web shooters", spider.weapon);
+    }
 }
