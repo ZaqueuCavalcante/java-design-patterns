@@ -1,10 +1,10 @@
-package com.javadp;
+package com.javadp.adapter;
 
 public class Iphone4sTo6sAdapter implements Charger
 {
     Iphone4sCharger iphone4sCharger;
 
-    Iphone4sTo6sAdapter()
+    public Iphone4sTo6sAdapter()
     {
         iphone4sCharger = new Iphone4sCharger();
     }

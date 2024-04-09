@@ -1,4 +1,4 @@
-package com.javadp;
+package com.javadp.adapter;
 
 public class Iphone4sCharger implements Charger
 {

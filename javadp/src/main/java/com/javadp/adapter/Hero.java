@@ -1,4 +1,6 @@
-package com.javadp;
+package com.javadp.adapter;
+
+import com.javadp.builder.Builder;
 
 public final class Hero {
     public String profession;

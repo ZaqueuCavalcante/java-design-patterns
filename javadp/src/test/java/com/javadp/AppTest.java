@@ -4,6 +4,14 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import com.javadp.adapter.Charger;
+import com.javadp.adapter.Hero;
+import com.javadp.adapter.IPhone6s;
+import com.javadp.builder.Builder;
+import com.javadp.facade.ComputerFacade;
+import com.javadp.singleton.Singleton;
+import com.javadp.adapter.Iphone4sTo6sAdapter;
+
 public class AppTest 
 {
     @Test
@@ -37,5 +45,12 @@ public class AppTest
         assertEquals("Peter Parker", spider.name);
         assertEquals("Black", spider.hairColor);
         assertEquals("Web shooters", spider.weapon);
+    }
+
+    @Test
+    public void facadeTests()
+    {
+        ComputerFacade computerFacade = new ComputerFacade();
+        computerFacade.startComputer();
     }
 }

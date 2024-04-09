@@ -1,4 +1,4 @@
-package com.javadp;
+package com.javadp.singleton;
 
 public final class Singleton {
     private static Singleton instance;
