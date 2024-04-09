@@ -1,6 +1,5 @@
 package com.javadp;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -20,12 +19,9 @@ public class AppTest
     @Test
     public void adapterTests()
     {
-        RoundHole roundHole = new RoundHole(5);
-        SquarePeg largeSqPeg = new SquarePeg(20);
-
-        SquarePegAdapter largeSqPegAdapter = new SquarePegAdapter(largeSqPeg);
-
-        assertFalse(roundHole.fits(largeSqPegAdapter));
+        Charger adapter = new Iphone4sTo6sAdapter();
+        IPhone6s iphone6s = new IPhone6s(adapter);
+        iphone6s.OnCharge();
     }
 
     @Test
